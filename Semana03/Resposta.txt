@@ -1,0 +1,7 @@
+Retira o disco 1 da torre 1 Coloca na torre 3
+Retira o disco 2 da torre 1 Coloca na torre 2
+Retira o disco 1 da torre 3 Coloca na torre 2
+Retira o disco 3 da torre 1 Coloca na torre 3
+Retira o disco 1 da torre 2 Coloca na torre 1
+Retira o disco 2 da torre 2 Coloca na torre 3
+Retira o disco 1 da torre 1 Coloca na torre 3
