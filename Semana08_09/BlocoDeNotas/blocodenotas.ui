@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BlocoDeNotas</class>
+ <widget class="QMainWindow" name="BlocoDeNotas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BlocoDeNotas</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivos">
+    <property name="title">
+     <string>Arquivos</string>
+    </property>
+    <addaction name="actionNovo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalvar"/>
+    <addaction name="actionSalvar_Como"/>
+    <addaction name="separator"/>
+    <addaction name="actionFechar"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="actionDesfazer"/>
+    <addaction name="actionRefazer"/>
+    <addaction name="separator"/>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionRecortar"/>
+    <addaction name="actionColar"/>
+   </widget>
+   <widget class="QMenu" name="menuSobre">
+    <property name="title">
+     <string>Sobre</string>
+    </property>
+    <addaction name="actionSistema_Digital"/>
+   </widget>
+   <addaction name="menuArquivos"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuSobre"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNovo"/>
+   <addaction name="actionAbrir"/>
+   <addaction name="actionSalvar"/>
+   <addaction name="actionSalvar_Como"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="actionRecortar"/>
+   <addaction name="actionColar"/>
+   <addaction name="separator"/>
+   <addaction name="actionDesfazer"/>
+   <addaction name="actionRefazer"/>
+   <addaction name="separator"/>
+   <addaction name="actionSistema_Digital"/>
+   <addaction name="separator"/>
+   <addaction name="actionFechar"/>
+  </widget>
+  <action name="actionNovo">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/new.png</normaloff>:/icones/Icones/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/abrir-contorno-da-pasta.png</normaloff>:/icones/Icones/abrir-contorno-da-pasta.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/salvar-silhueta-de-icone.png</normaloff>:/icones/Icones/salvar-silhueta-de-icone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+  <action name="actionSalvar_Como">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/floppy-disk.png</normaloff>:/icones/Icones/floppy-disk.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar Como</string>
+   </property>
+  </action>
+  <action name="actionFechar">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/botao-de-energia-desligado.png</normaloff>:/icones/Icones/botao-de-energia-desligado.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fechar</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/copiar-documento.png</normaloff>:/icones/Icones/copiar-documento.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionRecortar">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/tesouras-e-linhas-de-recorte.png</normaloff>:/icones/Icones/tesouras-e-linhas-de-recorte.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recortar</string>
+   </property>
+  </action>
+  <action name="actionColar">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/colar.png</normaloff>:/icones/Icones/colar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Colar</string>
+   </property>
+  </action>
+  <action name="actionDesfazer">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/desfazer.png</normaloff>:/icones/Icones/desfazer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Desfazer</string>
+   </property>
+  </action>
+  <action name="actionRefazer">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/refazer.png</normaloff>:/icones/Icones/refazer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refazer</string>
+   </property>
+  </action>
+  <action name="actionSistema_Digital">
+   <property name="icon">
+    <iconset resource="ArquivoDeRecursos.qrc">
+     <normaloff>:/icones/Icones/balao-de-fala-de-conversa-escrita-com-a-letra-i-dentro-das-informacoes-para-a-interface.png</normaloff>:/icones/Icones/balao-de-fala-de-conversa-escrita-com-a-letra-i-dentro-das-informacoes-para-a-interface.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sistema Digital</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="ArquivoDeRecursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

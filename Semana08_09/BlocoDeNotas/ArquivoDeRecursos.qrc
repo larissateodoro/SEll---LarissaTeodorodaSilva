@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icones">
+        <file>Icones/abrir-contorno-da-pasta.png</file>
+        <file>Icones/balao-de-fala-de-conversa-escrita-com-a-letra-i-dentro-das-informacoes-para-a-interface.png</file>
+        <file>Icones/botao-de-energia-desligado.png</file>
+        <file>Icones/colar.png</file>
+        <file>Icones/copiar-documento.png</file>
+        <file>Icones/desfazer.png</file>
+        <file>Icones/new.png</file>
+        <file>Icones/refazer.png</file>
+        <file>Icones/salvar-silhueta-de-icone.png</file>
+        <file>Icones/tesouras-e-linhas-de-recorte.png</file>
+        <file>Icones/floppy-disk.png</file>
+    </qresource>
+</RCC>
